@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<path d="M12.5,0 C19.4035594,0 25,5.59644063 25,12.5 C25,19.4035594 19.4035594,25 12.5,25 C5.59644063,25 0,19.4035594 0,12.5 C0,5.59644063 5.59644063,0 12.5,0 Z M7.54088764,11.7376903 C7.12667408,11.7376903 6.79088764,12.0734768 6.79088764,12.4876903 L6.79088764,12.4876903 L6.79088764,18.2376903 L12.2353265,18.2376903 L12.337097,18.2308437 C12.7031726,18.1811813 12.9853265,17.8673861 12.9853265,17.4876903 L12.9853265,17.4876903 L12.9784799,17.3859198 C12.9288174,17.0198442 12.6150222,16.7376903 12.2353265,16.7376903 L12.2353265,16.7376903 L8.291,16.737 L8.29088764,12.4876903 L8.28404103,12.3859198 C8.2343786,12.0198442 7.92058341,11.7376903 7.54088764,11.7376903 Z M18.9853265,6.73769032 L13.5408876,6.73769032 L13.4391171,6.74453693 C13.0730415,6.79419936 12.7908876,7.10799455 12.7908876,7.48769032 L12.7908876,7.48769032 L12.7977343,7.58946088 C12.8473967,7.95553644 13.1611919,8.23769032 13.5408876,8.23769032 L13.5408876,8.23769032 L17.4852141,8.23838064 L17.4853265,12.4876903 L17.4921731,12.5894609 C17.5418355,12.9555364 17.8556307,13.2376903 18.2353265,13.2376903 C18.64954,13.2376903 18.9853265,12.9019039 18.9853265,12.4876903 L18.9853265,12.4876903 L18.9853265,6.73769032 Z" id="path-1">
+		</path>
+		<filter x="-28.0%" y="-20.0%" width="156.0%" height="156.0%" filterUnits="objectBoundingBox" id="filter-2">
+			<feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1">
+			</feOffset>
+			<feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1">
+			</feGaussianBlur>
+			<feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1">
+			</feComposite>
+			<feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1">
+			</feColorMatrix>
+		</filter>
+	</defs>
+	<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<g id="Combined-Shape-Copy-5" transform="translate(4.000000, 2.000000)">
+			<g id="Combined-Shape-Copy-4">
+				<use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1">
+				</use>
+				<use fill-opacity="0.6" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1">
+				</use>
+			</g>
+		</g>
+	</g>
+</svg>

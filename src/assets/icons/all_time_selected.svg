@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="11px" viewBox="0 0 12 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Star</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#E4D3B4" offset="0%"></stop>
+            <stop stop-color="#AA9979" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tab/mobile/all-time" transform="translate(-196.000000, -17.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Group" transform="translate(160.000000, 8.000000)">
+                <g id="Group-4" transform="translate(36.000000, 5.000000)">
+                    <polygon id="Star" points="6 13 2.47328849 14.854102 3.14683045 10.927051 0.293660902 8.14589803 4.23664424 7.57294902 6 4 7.76335576 7.57294902 11.7063391 8.14589803 8.85316955 10.927051 9.52671151 14.854102"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

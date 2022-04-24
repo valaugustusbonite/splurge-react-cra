@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>
+		SplurgeCoin
+	</title>
+	<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<g id="Topbar/Default" transform="translate(-191.000000, -27.000000)">
+			<g id="SplurgeCoin" transform="translate(191.000000, 27.000000)">
+				<path d="M11,0 C4.934875,0 0,4.934875 0,11 C0,17.065125 4.934875,22 11,22 C17.065125,22 22,17.065125 22,11 C22,4.934875 17.065125,0 11,0 Z M11,20.625 C5.6925,20.625 1.375,16.3075 1.375,11 C1.375,5.6925 5.6925,1.375 11,1.375 C16.3075,1.375 20.625,5.6925 20.625,11 C20.625,16.3075 16.3075,20.625 11,20.625 Z" id="Shape-Copy-2" fill="#DEE3E8" fill-rule="nonzero">
+				</path>
+				<polyline id="Path" stroke="#DEE3E8" points="8.43830041 8.92480422 12.8774949 8.92480422 9.27427637 13.3881459 13.7602483 13.3881459">
+				</polyline>
+			</g>
+		</g>
+	</g>
+</svg>

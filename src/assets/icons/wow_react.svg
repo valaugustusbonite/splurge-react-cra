@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>React/Wow</title>
+    <defs>
+        <radialGradient cx="50%" cy="19.3746922%" fx="50%" fy="19.3746922%" r="100%" id="radialGradient-1">
+            <stop stop-color="#FFF277" offset="0%"></stop>
+            <stop stop-color="#FFA441" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#5B2003" offset="0%"></stop>
+            <stop stop-color="#814725" offset="100%"></stop>
+        </linearGradient>
+        <path d="M6.18181818,13.1363636 C9.59594209,13.1363636 12.3636364,11.0418484 12.3636364,7.60526316 C12.3636364,4.16867791 9.59594209,0 6.18181818,0 C2.76769427,0 0,4.16867791 0,7.60526316 C0,11.0418484 2.76769427,13.1363636 6.18181818,13.1363636 Z" id="path-3"></path>
+    </defs>
+    <g id="Reacts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Like-Swanling-Copy-4" transform="translate(-128.000000, -578.000000)">
+            <g id="Group-11" transform="translate(20.000000, 568.000000)">
+                <g id="Group" transform="translate(108.000000, 10.000000)">
+                    <circle id="Oval-Copy-7" fill="url(#radialGradient-1)" cx="17" cy="17" r="17"></circle>
+                    <ellipse id="Oval" fill="#504A4A" cx="10.8181818" cy="11.5909091" rx="3.09090909" ry="3.86363636"></ellipse>
+                    <ellipse id="Oval-Copy-8" fill="#504A4A" cx="23.1818182" cy="11.5909091" rx="3.09090909" ry="3.86363636"></ellipse>
+                    <g id="Path-13" transform="translate(10.818182, 17.772727)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Mask" fill="url(#linearGradient-2)" xlink:href="#path-3"></use>
+                    </g>
+                    <path d="M12.5635123,5.42749678 C12.0603107,4.63828453 11.3755035,4.2436784 10.5090909,4.2436784 C9.64267829,4.2436784 8.97298132,4.63828453 8.5,5.42749678" id="Path-6-Copy-2" stroke="#C5680A" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M24.9271487,5.42749678 C24.423947,4.63828453 23.7391399,4.2436784 22.8727273,4.2436784 C22.0063147,4.2436784 21.3366177,4.63828453 20.8636364,5.42749678" id="Path-6-Copy-3" stroke="#C5680A" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <ellipse id="Oval" fill="#FC5365" cx="29" cy="16.5" rx="3" ry="1.5"></ellipse>
+                    <ellipse id="Oval-Copy-12" fill="#FC5365" cx="5" cy="16.5" rx="3" ry="1.5"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

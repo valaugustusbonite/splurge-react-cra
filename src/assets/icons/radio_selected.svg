@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFECCB" offset="0%"></stop>
+            <stop stop-color="#AA9979" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Login" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="101-Profile-Information-/-Name-Display-Preference" transform="translate(-340.000000, -500.000000)">
+            <g id="Group-3" transform="translate(14.000000, 500.000000)">
+                <g id="Group" transform="translate(326.000000, 0.000000)">
+                    <circle id="Oval" stroke="#E4D3B4" stroke-width="2" opacity="0.5" cx="11" cy="11" r="10"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-1)" cx="11" cy="11" r="4"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

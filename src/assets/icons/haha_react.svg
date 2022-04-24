@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="34px" viewBox="0 0 42 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>React/Haha</title>
+    <defs>
+        <radialGradient cx="50%" cy="19.3746922%" fx="50%" fy="19.3746922%" r="100%" id="radialGradient-1">
+            <stop stop-color="#FFF277" offset="0%"></stop>
+            <stop stop-color="#FFA441" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="77.170359%" fx="50%" fy="77.170359%" r="108.617159%" gradientTransform="translate(0.500000,0.771704),scale(1.000000,0.600000),rotate(90.000000),translate(-0.500000,-0.771704)" id="radialGradient-2">
+            <stop stop-color="#1BDFFF" offset="0%"></stop>
+            <stop stop-color="#33A2F9" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#5B2003" offset="0%"></stop>
+            <stop stop-color="#814725" offset="100%"></stop>
+        </linearGradient>
+        <path d="M0,2.34090552 C0.0395026447,-1.65614561 6.73935076,0.678805386 13.762109,0.678805386 C20.7848672,0.678805386 27.9478642,-1.65841976 27.8181125,2.34090552 C27.8475646,6.60318824 22.462408,13.0980889 13.8546606,13.2751 C5.68535343,13.2148779 0.0237237137,6.66176534 0,2.34090552 Z" id="path-4"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#EA4766" offset="0%"></stop>
+            <stop stop-color="#9E132D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-7">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#D8D8D8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Reacts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Like-Swanling-Copy-4" transform="translate(-78.000000, -578.000000)">
+            <g id="Group-11" transform="translate(20.000000, 568.000000)">
+                <g id="Group" transform="translate(58.000000, 10.000000)">
+                    <circle id="Oval" fill="url(#radialGradient-1)" cx="21" cy="17" r="17"></circle>
+                    <path d="M37.4724969,19.5528833 C38.7527934,19.5528833 39.7906788,18.514998 39.7906788,17.2347015 C39.7906788,16.3811705 39.0179515,14.5781402 37.4724969,11.8256106 C35.9270424,14.5781402 35.1543151,16.3811705 35.1543151,17.2347015 C35.1543151,18.514998 36.1922005,19.5528833 37.4724969,19.5528833 Z" id="Oval" fill="url(#radialGradient-2)" transform="translate(37.472497, 15.689247) rotate(-66.000000) translate(-37.472497, -15.689247) "></path>
+                    <path d="M4.47249694,19.5528833 C5.75279341,19.5528833 6.79067876,18.514998 6.79067876,17.2347015 C6.79067876,16.3811705 6.01795149,14.5781402 4.47249694,11.8256106 C2.9270424,14.5781402 2.15431512,16.3811705 2.15431512,17.2347015 C2.15431512,18.514998 3.19220048,19.5528833 4.47249694,19.5528833 Z" id="Oval-Copy-11" fill="url(#radialGradient-2)" transform="translate(4.472497, 15.689247) scale(-1, 1) rotate(-66.000000) translate(-4.472497, -15.689247) "></path>
+                    <polyline id="Path-5" stroke="#504A4A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" transform="translate(13.758311, 12.672727) scale(1, -1) translate(-13.758311, -12.672727) " points="11.1529851 10.3545455 16.3636364 12.218929 11.7272727 14.9909091"></polyline>
+                    <polyline id="Path-5-Copy" stroke="#504A4A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" transform="translate(28.241689, 12.672727) scale(-1, -1) translate(-28.241689, -12.672727) " points="25.6363636 10.3545455 30.8470149 12.218929 26.2106512 14.9909091"></polyline>
+                    <g id="Path-7" transform="translate(7.090856, 18.043941)">
+                        <mask id="mask-5" fill="white">
+                            <use xlink:href="#path-4"></use>
+                        </mask>
+                        <use id="Mask" fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
+                        <path d="M22.90393,10.3383904 C22.90393,7.95665077 18.3370384,6.68333153 13.7701468,6.68333153 C9.20325523,6.68333153 4.63636364,7.95665077 4.63636364,10.3383904 C4.63636364,11.9262168 7.68095803,13.8300805 13.7701468,16.0499814 C19.8593356,13.8300805 22.90393,11.9262168 22.90393,10.3383904 Z" fill="url(#linearGradient-6)" mask="url(#mask-5)"></path>
+                        <path d="M2.83265108,-0.843941201 L2.83265108,0.794379541 C6.43194516,2.12771287 10.0761543,2.79437954 13.7652785,2.79437954 C17.4544027,2.79437954 21.1435269,2.12771287 24.8326511,0.794379541 L24.8326511,-0.843941201 L2.83265108,-0.843941201 Z" id="Path-12" fill="url(#linearGradient-7)" mask="url(#mask-5)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

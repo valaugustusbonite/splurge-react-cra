@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Egg</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFECCB" offset="0%"></stop>
+            <stop stop-color="#AA9979" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Logo-&amp;-Iconography" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Iconography" transform="translate(-1833.000000, -500.000000)">
+            <g id="Egg" transform="translate(1833.000000, 500.000000)">
+                <path d="M8,20 C12.418278,20 16,15.7272211 16,11.2047241 C16,6.68222707 12.8601984,0 8,0 C3.13980156,0 0,6.68222707 0,11.2047241 C0,15.7272211 3.581722,20 8,20 Z" id="Combined-Shape" fill="#DFBE84"></path>
+                <path d="M8,20 C11.8659932,20 15,16.3681379 15,12.5240155 C15,8.67989301 12.2526736,3 8,3 C3.74732636,3 1,8.67989301 1,12.5240155 C1,16.3681379 4.13400675,20 8,20 Z" id="Combined-Shape-Copy-9" fill="url(#linearGradient-1)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

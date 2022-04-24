@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="29px" viewBox="0 0 23 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icn_location</title>
+    <g id="Create-Moment" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="104_Add-Location-" transform="translate(-176.000000, -279.000000)" fill="#8D9AA3">
+            <g id="Combined-Shape" transform="translate(176.000000, 279.000000)">
+                <path d="M11.5,0 C17.8512746,0 23,5.05255036 23,11.2851871 C23,15.4402782 19.1666667,21.3452159 11.5,29 C3.83333333,21.3452159 0,15.4402782 0,11.2851871 C0,5.05255036 5.14872538,0 11.5,0 Z M11.5,7 C9.01471863,7 7,9.01471863 7,11.5 C7,13.9852814 9.01471863,16 11.5,16 C13.9852814,16 16,13.9852814 16,11.5 C16,9.01471863 13.9852814,7 11.5,7 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icn/badge/passion trending</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="133.956857%" id="linearGradient-1">
+            <stop stop-color="#F0F3F5" offset="0%"></stop>
+            <stop stop-color="#8D9AA3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="icn/badge/passion-trending" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" fill-rule="nonzero">
+            <g id="Group">
+                <g id="Group-3" fill="url(#linearGradient-1)" stroke="#373B47" stroke-width="1.5">
+                    <g id="Group-8-Copy">
+                        <circle id="Oval-Copy-2" cx="10" cy="10" r="10"></circle>
+                    </g>
+                </g>
+                <path d="M12.7988313,8.59916915 L10.1635593,8.59916915 L10.6053697,5.22345605 C10.6151276,5.13046185 10.5598892,5.04289486 10.4717594,5.01164959 C10.3836295,4.98040431 10.2855688,5.01362111 10.2345708,5.09199419 L7.02979834,10.7066324 C6.99163808,10.7686996 6.99002116,10.8465492 7.02557139,10.9101473 C7.06112162,10.9737454 7.12828163,11.0131499 7.20114132,11.0131588 L9.79703517,11.0131588 L9.44690608,14.3939514 C9.43982698,14.4865911 9.4967372,14.5721503 9.58491243,14.601431 C9.67308767,14.6307117 9.76987331,14.5961909 9.81961603,14.5177186 L12.9714316,8.90368389 C13.0086404,8.84153425 13.0095624,8.76417909 12.9738456,8.70116021 C12.938129,8.63812885 12.8712787,8.59917127 12.7988313,8.59916915 Z" id="Path" fill="#0D0B0D"></path>
+            </g>
+        </g>
+    </g>
+</svg>

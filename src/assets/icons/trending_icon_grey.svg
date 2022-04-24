@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="20px" viewBox="0 0 13 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>flash</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#E4D3B4" offset="0%"></stop>
+            <stop stop-color="#AA9979" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="New-Marketplace" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Web/-Marketplace/-Swanlings/-Filter/-Price-Range/-Ethereum" transform="translate(-140.000000, -440.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Group-19" transform="translate(121.000000, 426.000000)">
+                <g id="flash" transform="translate(19.000000, 14.000000)">
+                    <path d="M12.4302805,7.70131387 C12.3559621,7.57015924 12.2168611,7.48909694 12.0661137,7.48909252 L6.58268258,7.48909252 L7.50199447,0.464963703 C7.5222987,0.271462886 7.40735954,0.089254936 7.22398037,0.0242402668 C7.0406012,-0.0407744023 6.8365581,0.0283425936 6.73044221,0.191420019 L0.0620039011,11.8742678 C-0.0173993527,12.003416 -0.020763807,12.1654044 0.0532085325,12.2977382 C0.127180872,12.4300721 0.266926318,12.5120644 0.418531572,12.5120829 L5.82002521,12.5120829 L5.09148231,19.5467809 C5.07675222,19.7395442 5.19517008,19.9175743 5.37864367,19.9785011 C5.56211727,20.0394279 5.76350725,19.9675976 5.8670111,19.8043138 L12.4252576,8.12272183 C12.502681,7.99340187 12.5045996,7.83244252 12.4302805,7.70131387 L12.4302805,7.70131387 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

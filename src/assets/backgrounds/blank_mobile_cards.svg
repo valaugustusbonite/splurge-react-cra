@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="353px" height="165px" viewBox="0 0 353 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 16</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#1C1D20" offset="0%"></stop>
+            <stop stop-color="#0D0B0D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="New" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="My-Profile" transform="translate(-11.000000, -1586.000000)" fill="url(#linearGradient-1)">
+            <g id="Group-16" transform="translate(11.000000, 1586.000000)">
+                <rect id="Rectangle-Copy-10" x="0" y="0" width="165" height="165" rx="5"></rect>
+                <rect id="Rectangle-Copy-12" x="188" y="0" width="165" height="165" rx="5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

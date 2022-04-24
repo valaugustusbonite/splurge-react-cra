@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>React/Angry</title>
+    <defs>
+        <radialGradient cx="52.1527943%" cy="70.6696746%" fx="52.1527943%" fy="70.6696746%" r="59.513309%" id="radialGradient-1">
+            <stop stop-color="#FFEA77" offset="0%"></stop>
+            <stop stop-color="#FA662C" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#5B2003" offset="0%"></stop>
+            <stop stop-color="#814725" offset="100%"></stop>
+        </linearGradient>
+        <path d="M0,4.20669102 C0,2.56551821 2.93215471,0 6.95452785,0 C10.976901,0 13.9090909,2.79609555 13.9090909,4.20669102 C13.9090909,5.6172865 10.9887586,4.99374049 6.95452785,4.99374049 C2.92029705,4.99374049 0,5.84786384 0,4.20669102 Z" id="path-3"></path>
+    </defs>
+    <g id="Reacts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Like-Swanling-Copy-4" transform="translate(-220.000000, -578.000000)">
+            <g id="Group-11" transform="translate(20.000000, 568.000000)">
+                <g id="Group" transform="translate(200.000000, 10.000000)">
+                    <circle id="Oval-Copy-7" fill="url(#radialGradient-1)" cx="17" cy="17" r="17"></circle>
+                    <ellipse id="Oval" fill="#504A4A" cx="10.0454545" cy="17" rx="2.31818182" ry="3.09090909"></ellipse>
+                    <ellipse id="Oval-Copy-8" fill="#504A4A" cx="23.9545455" cy="17" rx="2.31818182" ry="3.09090909"></ellipse>
+                    <path d="M27.7242119,13.3843759 C24.428348,14.2955503 22.3059283,14.7511375 21.3569528,14.7511375 C20.4079774,14.7511375 19.9556262,14.6101926 19.9998993,14.3283028 L19.9998993,13.0214106 L21.4100952,14.1559739 L27.7242119,13.3843759 Z" id="Path-6-Copy-3" stroke="#C5460A" stroke-linecap="round" stroke-linejoin="round" transform="translate(23.860576, 13.886274) rotate(-10.000000) translate(-23.860576, -13.886274) "></path>
+                    <path d="M14.0005756,13.3843759 C10.7047116,14.2955503 8.58229192,14.7511375 7.63331646,14.7511375 C6.68434099,14.7511375 6.23198984,14.6101926 6.27626299,14.3283028 L6.27626299,13.0214106 L7.68645886,14.1559739 L14.0005756,13.3843759 Z" id="Path-6-Copy-5" stroke="#C5460A" stroke-linecap="round" stroke-linejoin="round" transform="translate(10.136939, 13.886274) scale(-1, 1) rotate(-10.000000) translate(-10.136939, -13.886274) "></path>
+                    <g id="Path-14" transform="translate(10.045455, 22.409091)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Mask" fill="url(#linearGradient-2)" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

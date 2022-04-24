@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="44px" viewBox="0 0 48 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>king</title>
+    <defs>
+        <filter x="-60.0%" y="-84.7%" width="220.0%" height="269.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Iconography" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1809.000000, -240.000000)" fill="#DCBB87" fill-rule="nonzero" id="king">
+            <g filter="url(#filter-1)" transform="translate(1832.819569, 262.076357) rotate(-20.000000) translate(-1832.819569, -262.076357) translate(1822.819569, 254.993024)">
+                <circle id="Oval" cx="10" cy="0.833333333" r="1"></circle>
+                <circle id="Oval" cx="19.1666667" cy="5" r="1"></circle>
+                <circle id="Oval" cx="0.833333333" cy="5" r="1"></circle>
+                <path d="M2.4796875,14.1666667 L17.5208333,14.1666667 L19.146875,6.84739583 C19.220683,6.51520199 19.0850937,6.17150394 18.8043615,5.97917668 C18.5236292,5.78684941 18.1541601,5.78453623 17.8710417,5.97333333 L13.65625,8.78291667 L10.7453125,2.960625 C10.6041352,2.67835278 10.3156084,2.50005664 10,2.50005664 C9.68439165,2.50005664 9.39586479,2.67835278 9.2546875,2.960625 L6.34375,8.78291667 L2.12885417,5.97333333 C1.84573743,5.78460947 1.47632073,5.78696192 1.19563046,5.97927613 C0.914940182,6.17159034 0.779359363,6.51523561 0.853125,6.84739583 L2.4796875,14.1666667 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

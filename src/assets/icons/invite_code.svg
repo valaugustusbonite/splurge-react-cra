@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="15px" viewBox="0 0 20 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="115.604554%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#E4D3B4" offset="0%"></stop>
+            <stop stop-color="#AA9979" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Invite-Code" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="106-Generate-Invite-Code" transform="translate(-1146.000000, -426.000000)" fill-rule="nonzero" stroke="url(#linearGradient-1)" stroke-width="1.5">
+            <g id="Group-17" transform="translate(1147.428571, 423.000000)">
+                <path d="M14.5714286,9.71428571 L14.5714286,19.1428571 L11.4014286,19.1428571 C10.9780293,18.1143194 9.8438957,17.426471 8.57142857,17.426471 C7.29896144,17.426471 6.16482789,18.1143194 5.74142857,19.1428571 L2.57142857,19.1428571 L2.57142857,9.71428571 L6.57142857,9.71428571 C7.12371332,9.71428571 7.57142857,9.33052979 7.57142857,8.85714286 C7.57142857,8.38375593 7.12371332,8 6.57142857,8 L2.57142857,8 L2.57142857,2 L5.74142857,2 C6.16482789,3.02853772 7.29896144,3.71638619 8.57142857,3.71638619 C9.8438957,3.71638619 10.9780293,3.02853772 11.4014286,2 L14.5714286,2 L14.5714286,8 L10.5714286,8 C10.0191438,8 9.57142857,8.38375593 9.57142857,8.85714286 C9.57142857,9.33052979 10.0191438,9.71428571 10.5714286,9.71428571 L14.5714286,9.71428571 Z" id="Path" transform="translate(8.571429, 10.571429) rotate(-270.000000) translate(-8.571429, -10.571429) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
