@@ -2,13 +2,13 @@ import React from 'react';
 import LoginScreen from 'features/login/components/LoginScreen';
 import { ChakraProvider } from '@chakra-ui/react';
 import Newsfeed from 'features/newsfeed/components/Newsfeed';
-import { appTheme } from 'utils/styles/themes';
+import { theme } from 'configurations'
 
 const App = () => {
-  return <ChakraProvider theme={appTheme}>
+  return <ChakraProvider theme={theme}>
     <div>
-      {/* <LoginScreen /> */}
-      <Newsfeed />
+      <LoginScreen />
+      {/* <Newsfeed /> */}
     </div>
   </ChakraProvider>
 }

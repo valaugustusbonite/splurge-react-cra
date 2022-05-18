@@ -1,9 +1,9 @@
 import { Box, Flex, Image } from "@chakra-ui/react"
 import BrandLogo from 'assets/icons/login/brand_name.svg';
-import NavbarMenuItems from "./NavbarMenuItems";
+import { NavbarMenuItems } from "../navigation";
 
 
-const Navbar: React.FC = () => {
+export const Navbar: React.FC = () => {
     return <>
     <Flex h='61px' w='100vw' backgroundColor='appDarkGray' dir='row' justifyContent='space-between' alignItems='center'>
         <Image src={BrandLogo} alt='brand-logo' h='40px' objectFit='cover'/>
@@ -11,5 +11,3 @@ const Navbar: React.FC = () => {
     </Flex>
     </>
 }
-
-export default Navbar;
