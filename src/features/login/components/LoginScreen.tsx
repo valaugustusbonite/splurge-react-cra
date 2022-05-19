@@ -4,6 +4,7 @@ import BrandLogo from 'assets/icons/login/brand_name.svg';
 import { useWindowSize } from 'common/custom_hooks/use_window_size';
 import { ScreenSize } from 'common/helper/screen_size';
 import { useEffect } from 'react';
+import { signInWithGooglePopup } from 'utils';
 
 const LoginScreen: React.FC = () => {
     let width =  useWindowSize()?.width ?? 0.0;

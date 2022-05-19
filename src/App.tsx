@@ -1,7 +1,7 @@
 import React from 'react';
 import LoginScreen from 'features/login/components/LoginScreen';
 import { ChakraProvider } from '@chakra-ui/react';
-import Newsfeed from 'features/newsfeed/components/Newsfeed';
+import { Newsfeed } from 'features/newsfeed';
 import { appTheme } from 'utils/styles/themes';
 
 const App = () => {

@@ -22,7 +22,7 @@ function counterReducer(state = initialState, action: any) {
 
 const store = configureStore({ reducer: counterReducer });
 
-const Newsfeed: React.FC = () => {
+export const Newsfeed: React.FC = () => {
     
     return <div>
         <Navbar/>
@@ -30,5 +30,3 @@ const Newsfeed: React.FC = () => {
         <button></button>
     </div>
 }
-
-export default Newsfeed;
