@@ -1,11 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    count: 0,
+    isLoggedin: false,
 }
 
-export const counterSlice = createSlice({
-    name: 'counter',
+export const authenticationSlice = createSlice({
+    name: 'authentication',
     initialState: initialState,
     reducers: {}
 });

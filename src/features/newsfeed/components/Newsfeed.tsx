@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import Navbar from "common/components/Navbar";
+import Navbar from "common/components/navigation/Navbar";
 
 const initialState = {
     value: 0
@@ -26,7 +26,7 @@ const Newsfeed: React.FC = () => {
     
     return <div>
         <Navbar/>
-        <h5>500</h5>
+        <h5>Newsfeed</h5>
         <button></button>
     </div>
 }

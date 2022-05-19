@@ -7,8 +7,8 @@ import { appTheme } from 'utils/styles/themes';
 const App = () => {
   return <ChakraProvider theme={appTheme}>
     <div>
-      {/* <LoginScreen /> */}
-      <Newsfeed />
+      <LoginScreen />
+      {/* <Newsfeed /> */}
     </div>
   </ChakraProvider>
 }

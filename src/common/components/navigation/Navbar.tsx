@@ -1,6 +1,6 @@
 import { Box, Flex, Image } from "@chakra-ui/react"
 import BrandLogo from 'assets/icons/login/brand_name.svg';
-import NavbarMenuItems from "./NavbarMenuItems";
+import { NavbarMenuItems } from "common/components/navigation";
 
 
 const Navbar: React.FC = () => {

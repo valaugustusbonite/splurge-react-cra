@@ -24,4 +24,5 @@ yarn-error.log*
 
 # environments
 .env
+.env.example
 /src/configurations/environment.ts
