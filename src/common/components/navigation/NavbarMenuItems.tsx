@@ -4,7 +4,7 @@ import Home from 'assets/icons/home_tab.svg';
 import Marketplace from 'assets/icons/search_tab.svg';
 import Create from 'assets/icons/add_moment_tab.svg';
 
-const NavbarMenuItems = () => {
+export const NavbarMenuItems = () => {
     return <>
         <Flex flexDirection='row'>
             <NavbarItem icon={Home}/>
@@ -14,8 +14,6 @@ const NavbarMenuItems = () => {
         </Flex>
     </>
 }
-
-export default NavbarMenuItems;
 
 interface NavbarItemPropsInterface {
     icon: string,
