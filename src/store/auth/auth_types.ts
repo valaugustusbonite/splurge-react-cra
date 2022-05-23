@@ -13,6 +13,5 @@ export interface authState {
 }
 
 export enum AuthActionTypes {
-    REGISTER_WITH_NUMBER = 'REGISTER_WITH_NUMBER',
-    REGISTER_WITH_GOOGLE = 'REGISTER_WITH_GOOGLE',
+    SIGNIN_WITH_GOOGLE = 'REGISTER_WITH_GOOGLE',
 }

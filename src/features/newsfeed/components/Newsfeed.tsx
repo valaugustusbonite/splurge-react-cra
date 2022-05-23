@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import Navbar from "common/components/navigation/Navbar";
+import { Navbar } from "common/components/navigation";
 
 const initialState = {
     value: 0

@@ -4,16 +4,21 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { store } from 'store/store';
+import { store } from 'store';
 import { Provider } from 'react-redux';
+import { UserProvider } from 'contexts';
+import { ChakraProvider } from '@chakra-ui/react';
+import { theme } from 'configurations'
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
-        <Routes>
-          <Route path="/" element={<App />} />
-        </Routes>
+        {/* <UserProvider> */}
+        <ChakraProvider theme={theme}>
+          <App />
+        </ChakraProvider>
+        {/* </UserProvider> */}
       </Provider>
     </BrowserRouter>
   </React.StrictMode>,

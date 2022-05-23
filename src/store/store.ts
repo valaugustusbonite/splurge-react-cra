@@ -1,6 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { authenticationSlice } from 'features/login/state/login_slice';
+import { rootReducer } from 'store';
+import logger from 'redux-logger';
+
+const middlewares = [logger];
+
 
 export const store = configureStore({
-    reducer: {}
+    reducer: rootReducer,
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(...middlewares),
+    devTools: process.env.REACT_APP_ENVIRONMENT !== 'production',
 })

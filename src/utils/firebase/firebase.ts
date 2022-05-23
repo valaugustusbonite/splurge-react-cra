@@ -4,15 +4,17 @@ import {
   signInWithRedirect,
   signInWithPopup,
   GoogleAuthProvider,
+  onAuthStateChanged,
 } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_APP_ID,
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_APP_ID,
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 // creates an instance of a firebase app
@@ -27,4 +29,20 @@ googleAuthProvider.setCustomParameters({
 });
 
 export const auth = getAuth();
-export const signInWithGooglePopup = () => signInWithPopup(auth, googleAuthProvider);
+
+export const signInWithGooglePopup = () => {
+  try {
+    return signInWithPopup(auth, googleAuthProvider);
+  } catch (error) {
+    
+  }
+}
+export const authListener = (callback?: (args: any) => void) => {
+  try {
+    if (!callback) return;
+
+    onAuthStateChanged(auth, callback);
+  } catch (error) {
+    
+  }
+}

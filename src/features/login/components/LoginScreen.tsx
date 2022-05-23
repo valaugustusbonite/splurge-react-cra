@@ -1,55 +1,47 @@
-import { Flex, Box, Center, Text, Image } from '@chakra-ui/react';
+import { Flex, Box, Center, Text, Image, useMediaQuery } from '@chakra-ui/react';
 import LoginBGDesktop from 'assets/backgrounds/login_desktop.png';
 import BrandLogo from 'assets/icons/login/brand_name.svg';
-import { useWindowSize } from 'common/custom_hooks/use_window_size';
-import { ScreenSize } from 'common/helper/screen_size';
-import { useEffect } from 'react';
+import { OutlineButton } from 'common/components/buttons';
 import { signInWithGooglePopup } from 'utils';
+import { useContext } from 'react';
+import { UserContext } from 'contexts';
+import { useDispatch } from 'react-redux';
 
-const LoginScreen: React.FC = () => {
-    let width =  useWindowSize()?.width ?? 0.0;
-    let screenSize = new ScreenSize(width);
+export const LoginScreen: React.FC = () => {
+    const [ isMobile ] = useMediaQuery("(max-width: 768px)");
+    const { assignUser, currentUser } = useContext(UserContext);
+    // const dispatch = useDispatch();
 
-    console.log(screenSize.width);
+    const signInWithGoogle = async () => {
+    //    try {
+    //     const response = await signInWithGooglePopup();
+        
+    //     if (!response) return;
 
-    if (screenSize.isMobileView) return <MobileLogin />
+    //     const { user } = response;
+    //     assignUser(user);
 
-    return <DesktopLogin />
-}
+    //    } catch (error) {
+           
+    //    }
+    }
 
-export default LoginScreen;
-
-const MobileLogin: React.FC = () => {
-return <>
-    <Box w='100vw' h='100vh'>
-        <Flex flexDirection='column' alignItems='center'>
-            <Box w='100vw' h='50vh'>
-                <Image src={LoginBGDesktop} alt='login' boxSize='100%' objectFit='cover'/>
-            </Box>
-            <Center w='100vw' backgroundColor='#0D0B0D' h='50vh' padding='0'>
-                <Flex flexDirection='column'>
-                    <Image src={BrandLogo} />
-                    <Box h='30px'></Box>
-                    <Text color='white'>The Social Marketplace for you</Text>
-                </Flex>
-            </Center>
-        </Flex>
-    </Box>
-</>
-}
-
-const DesktopLogin: React.FC = () => {
     return <>
         <Box w='100vw' h='100vh'>
-            <Flex flexDirection='row' alignItems='center'>
-                <Box w='50vw' h='100vh'>
+            <Flex flexDirection={isMobile ? 'column' : 'row'} alignItems='center'>
+                <Box w={isMobile ? '100vw' : '50vw'} h={isMobile ? '50vh' : '100vh'}>
                     <Image src={LoginBGDesktop} alt='login' boxSize='100%' objectFit='cover'/>
                 </Box>
-                <Center w='50vw' backgroundColor='#0D0B0D' h='100vh' padding='0'>
+                <Center w={isMobile ? '100vw' : '50vw'} h={isMobile ? '50vh' : '100vh'} backgroundColor='#0D0B0D' padding='0'>
                     <Flex flexDirection='column'>
                         <Image src={BrandLogo} />
                         <Box h='30px'></Box>
                         <Text color='white'>The Social Marketplace for you</Text>
+                        <Box h='30px'></Box>
+                        <OutlineButton 
+                            buttonLabel='Sign in with Google' 
+                            onClick={signInWithGoogle}
+                        />
                     </Flex>
                 </Center>
             </Flex>

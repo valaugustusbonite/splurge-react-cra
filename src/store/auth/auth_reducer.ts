@@ -4,20 +4,22 @@
 
 import { AuthActionTypes } from "./auth_types";
 
-const authInitialState = {
-    numOfCakes: 10,
+export const authInitialState = {
+    currentUser: null
 }
 
-const authReducer = (state = authInitialState, action: any) => {
-    switch (action.type) {
-        case AuthActionTypes.REGISTER_WITH_NUMBER:
+export const authReducer = (state = authInitialState, action: any) => {
+    const { type, payload } = action;
+
+    console.log(`STATE: ${state}`);
+
+    switch (type) {
+        case AuthActionTypes.SIGNIN_WITH_GOOGLE:
             return {
                 ...state,
-                numOfCakes: state.numOfCakes - 1,
+                currentUser: payload,
             };
     
         default: return state;
     }
 }
-
-export default authReducer;
