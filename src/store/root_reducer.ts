@@ -1,10 +1,12 @@
 import { combineReducers, ReducersMapObject } from "@reduxjs/toolkit";
-import { authReducer } from "store"
+import authReducer from "features/login/slices/auth_slice";
 
-let reducers: ReducersMapObject<unknown, any> = {
-  authReducer: authReducer
-}
+// let reducers: ReducersMapObject<unknown, any> = {
+//   authReducer: authReducer
+// }
 
 export const rootReducer = combineReducers({
-  authReducer
+  authReducer: authReducer
 });
+
+export type RootReducer = ReturnType<typeof rootReducer>

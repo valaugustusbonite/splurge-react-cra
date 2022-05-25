@@ -1,3 +1,10 @@
+export enum AuthStateStatus {
+  idle,
+  loading,
+  success,
+  error
+}
+
 export type User = {
   id?: string,
   name?: string,
@@ -13,4 +20,14 @@ export type User = {
   createdMomentsCount: number,
   ownedUsersCount: number,
   purchasedByCount: number
+}
+
+export interface AuthState {
+  readonly status: AuthStateStatus;
+  readonly data?: User | null;
+  readonly erros?: any;
+}
+
+export enum AuthActionTypes {
+  SIGNIN_WITH_GOOGLE = 'REGISTER_WITH_GOOGLE',
 }
