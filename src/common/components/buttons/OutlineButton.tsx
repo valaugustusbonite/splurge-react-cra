@@ -10,7 +10,7 @@ export const OutlineButton: React.FC<OutlineButtonInterface> = ({
     onClick,
 }) => {
     return <>
-        <Button variant='outline' borderColor='brand.primaryWhite' color='brand.primaryWhite' onClick={onClick}>
+        <Button variant='outline' borderColor='primaryWhite' color='primaryWhite' onClick={onClick}>
             {buttonLabel}
         </Button>
     </>

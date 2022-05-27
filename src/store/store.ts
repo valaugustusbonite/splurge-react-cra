@@ -11,7 +11,7 @@ export const store = configureStore({
         authReducer
     },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware({
-        serializableCheck: false,
+        //serializableCheck: false,
     }).concat(...middlewares),
     devTools: process.env.REACT_APP_ENVIRONMENT !== 'production',
 });

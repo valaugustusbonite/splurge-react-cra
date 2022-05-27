@@ -3,14 +3,17 @@ import Notif from 'assets/icons/feed_tab.svg';
 import Home from 'assets/icons/home_tab.svg';
 import Marketplace from 'assets/icons/search_tab.svg';
 import Create from 'assets/icons/add_moment_tab.svg';
+import { ProfileAvatar } from "../ProfileAvatar";
+import { ProfileDropdown } from "./ProfileDropDown";
 
 export const NavbarMenuItems = () => {
     return <>
-        <Flex flexDirection='row'>
+        <Flex flexDirection='row' alignItems='center'>
             <NavbarItem icon={Home}/>
             <NavbarItem icon={Marketplace}/>
             <NavbarItem icon={Create}/>
             <NavbarItem icon={Notif}/>
+            <ProfileDropdown />
         </Flex>
     </>
 }

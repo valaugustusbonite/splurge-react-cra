@@ -6,24 +6,32 @@ import { signInWithGooglePopup } from 'utils';
 import { useContext } from 'react';
 import { UserContext } from 'contexts';
 import { useDispatch } from 'react-redux';
+import { userReceived, logout, errorInFetch } from 'features/login/slices/auth_slice';
 
 export const LoginScreen: React.FC = () => {
     const [ isMobile ] = useMediaQuery("(max-width: 768px)");
     const { assignUser, currentUser } = useContext(UserContext);
-    // const dispatch = useDispatch();
+    const dispatch = useDispatch();
 
     const signInWithGoogle = async () => {
-    //    try {
-    //     const response = await signInWithGooglePopup();
+       try {
+        const response = await signInWithGooglePopup();
         
-    //     if (!response) return;
+        if (!response) return;
 
-    //     const { user } = response;
-    //     assignUser(user);
+        const { user } = response;
+        dispatch(userReceived({
+            email: user.email,
+            photoURL: user.photoURL,
+            displayName: user.displayName,
+        }));
 
-    //    } catch (error) {
-           
-    //    }
+        console.log(user);
+
+       } catch (error) {
+        dispatch(logout());
+        dispatch(errorInFetch(error))
+       }
     }
 
     return <>
@@ -32,7 +40,7 @@ export const LoginScreen: React.FC = () => {
                 <Box w={isMobile ? '100vw' : '50vw'} h={isMobile ? '50vh' : '100vh'}>
                     <Image src={LoginBGDesktop} alt='login' boxSize='100%' objectFit='cover'/>
                 </Box>
-                <Center w={isMobile ? '100vw' : '50vw'} h={isMobile ? '50vh' : '100vh'} backgroundColor='#0D0B0D' padding='0'>
+                <Center w={isMobile ? '100vw' : '50vw'} h={isMobile ? '50vh' : '100vh'} backgroundColor='primaryDark' padding='0'>
                     <Flex flexDirection='column'>
                         <Image src={BrandLogo} />
                         <Box h='30px'></Box>

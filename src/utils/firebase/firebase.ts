@@ -5,6 +5,7 @@ import {
   signInWithPopup,
   GoogleAuthProvider,
   onAuthStateChanged,
+  signOut,
 } from "firebase/auth";
 
 const firebaseConfig = {
@@ -46,3 +47,5 @@ export const authListener = (callback?: (args: any) => void) => {
     
   }
 }
+
+export const signOutGoogle = () => auth.signOut();

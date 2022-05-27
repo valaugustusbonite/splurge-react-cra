@@ -1,17 +1,24 @@
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
+import { useAppDispatch } from "common/custom_hooks/use_app_dispatch";
 import { AuthActionTypes, AuthState, AuthStateStatus } from "features/login/types/auth_types";
 import { User } from "features/login/types/auth_types";
+import { signInWithGooglePopup } from "utils";
 
 const initialState: AuthState = {
   status: AuthStateStatus.idle,
   data: null,
 }
 
-// const fetchUserById = createAsyncThunk(
+// const fetchUserFromGoogle = createAsyncThunk(
 //   AuthActionTypes.SIGNIN_WITH_GOOGLE,
-//   async (userId, thunkAPI) => {
-//     // const response = await userAPI.fetchById(userId)
-//     return response.data
+//   async (thunkAPI) => {
+//     try {
+//       const response = await signInWithGooglePopup();
+
+//       return response.data;
+//     } catch (error) {
+      
+//     }
 //   }
 // )
 
@@ -26,19 +33,22 @@ const authSlice = createSlice({
     //   let { payload } = action;
     //   state.data = payload;
     // }
-    userReceived: (state, action: PayloadAction<User>) => {
+    userReceived: (state, action: PayloadAction<any>) => {
       state.status = AuthStateStatus.success;
       state.data = action.payload;
     },
     errorInFetch: (state, action: PayloadAction<any>) => {
       state.status = AuthStateStatus.error;
       state.erros = action.payload;
+    },
+    logout: (state) => {
+      state.data = null;
     }
   }
 });
 
 const { actions, reducer } = authSlice;
 
-export const { fetchingUserFromGoogle, userReceived, errorInFetch } = actions;
+export const { fetchingUserFromGoogle, userReceived, errorInFetch, logout } = actions;
 
 export default reducer;
