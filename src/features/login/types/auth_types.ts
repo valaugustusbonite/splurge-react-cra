@@ -25,7 +25,7 @@ export type User = {
 export interface AuthState {
   readonly status: AuthStateStatus;
   readonly data?: any | null;
-  readonly erros?: any;
+  readonly error?: any;
 }
 
 export enum AuthActionTypes {

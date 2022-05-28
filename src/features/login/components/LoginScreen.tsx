@@ -26,11 +26,10 @@ export const LoginScreen: React.FC = () => {
             displayName: user.displayName,
         }));
 
-        console.log(user);
 
        } catch (error) {
         dispatch(logout());
-        dispatch(errorInFetch(error))
+        dispatch(errorInFetch({ error }))
        }
     }
 
