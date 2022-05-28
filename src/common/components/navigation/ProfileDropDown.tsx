@@ -22,7 +22,7 @@ export const ProfileDropdown: React.FC = () => {
       await signOutGoogle();
       dispatch(logout())
     } catch (error) {
-      dispatch(errorInFetch(error));
+      dispatch(errorInFetch({ error }));
     }
   }
 

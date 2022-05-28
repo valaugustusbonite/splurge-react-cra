@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { LoginScreen, fetchingUserFromGoogle, userReceived, errorInFetch, logout } from 'features/login';
+import { LoginScreen, fetchingUserFromGoogle, userReceived, errorInFetch, logout, userEmpty } from 'features/login';
 
 import { Newsfeed } from 'features/newsfeed';
 import { authListener } from 'utils/firebase/firebase';
@@ -8,6 +8,7 @@ import { useAppDispatch } from 'common/custom_hooks/use_app_dispatch';
 import { useAppSelector } from 'common/custom_hooks/use_app_selector';
 import { Route, Routes, useNavigate } from 'react-router';
 import { ProtectedRoute } from 'common/components/ProtectedRoute';
+import { printWrapped } from 'utils';
 
 
 const App = () => {
@@ -15,14 +16,15 @@ const App = () => {
   const navigate = useNavigate();
   const data = useAppSelector((state) => state.authReducer.data);
 
-  console.log(data?.accessToken ?? '');
-
   useEffect(() => {
 
     const listener = authListener((user) => {
       try {
+        dispatch(fetchingUserFromGoogle());
 
-        console.log(user);
+        if (!user) {
+          dispatch(userEmpty())
+        }
 
         if (user) {
           dispatch(userReceived({
@@ -31,11 +33,15 @@ const App = () => {
             displayName: user.displayName,
             accessToken: user.accessToken,
           }));
+
+          if (process.env.REACT_APP_ENVIRONMENT !== 'production') {
+            printWrapped(`token: ${user.accessToken}`);
+          }
         }
         
       } catch (error) {
         dispatch(logout());
-        dispatch(errorInFetch(error))
+        dispatch(errorInFetch({ error }))
       }
     });
 

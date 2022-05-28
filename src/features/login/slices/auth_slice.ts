@@ -33,13 +33,17 @@ const authSlice = createSlice({
     //   let { payload } = action;
     //   state.data = payload;
     // }
+    userEmpty: (state) => {
+      state.status = AuthStateStatus.success;
+      state.data = null;
+    },
     userReceived: (state, action: PayloadAction<any>) => {
       state.status = AuthStateStatus.success;
       state.data = action.payload;
     },
     errorInFetch: (state, action: PayloadAction<any>) => {
       state.status = AuthStateStatus.error;
-      state.erros = action.payload;
+      state.error = action.payload;
     },
     logout: (state) => {
       state.data = null;
@@ -49,6 +53,6 @@ const authSlice = createSlice({
 
 const { actions, reducer } = authSlice;
 
-export const { fetchingUserFromGoogle, userReceived, errorInFetch, logout } = actions;
+export const { fetchingUserFromGoogle, userReceived, errorInFetch, logout, userEmpty } = actions;
 
 export default reducer;
