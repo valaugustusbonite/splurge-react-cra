@@ -1,9 +1,6 @@
-import { combineReducers, ReducersMapObject } from "@reduxjs/toolkit";
+import { combineReducers } from "@reduxjs/toolkit";
 import authReducer from "features/login/slices/auth_slice";
 
-// let reducers: ReducersMapObject<unknown, any> = {
-//   authReducer: authReducer
-// }
 
 export const rootReducer = combineReducers({
   authReducer: authReducer

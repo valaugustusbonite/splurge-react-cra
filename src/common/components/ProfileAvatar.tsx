@@ -1,10 +1,12 @@
 import { Avatar } from "@chakra-ui/react"
-import { useAppSelector } from "common/custom_hooks/use_app_selector"
-import { useEffect, useState } from "react";
 
-export const ProfileAvatar: React.FC = () => {
-  //const { photoURL } = useAppSelector((state) => state.authReducer.data);
+interface ProfileAvatarProps {
+  photoUrl?: string
+}
 
+export const ProfileAvatar: React.FC<ProfileAvatarProps> = ({
+  photoUrl
+}) => {
 
-  return <Avatar src='' w='23px' h='23px' margin='0 20px'/>
+  return <Avatar src={photoUrl ?? ''} w='23px' h='23px' margin='0 20px'/>
 }

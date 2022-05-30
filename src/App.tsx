@@ -1,20 +1,15 @@
-import React, { useEffect } from 'react';
-import { LoginScreen, fetchingUserFromGoogle, userReceived, errorInFetch, logout, userEmpty } from 'features/login';
+import { useEffect } from 'react';
+import { fetchingUserFromGoogle, userReceived, errorInFetch, logout, userEmpty } from 'features/login';
 
 import { Newsfeed } from 'features/newsfeed';
 import { authListener } from 'utils/firebase/firebase';
-import { useDispatch, useSelector } from 'react-redux';
 import { useAppDispatch } from 'common/custom_hooks/use_app_dispatch';
-import { useAppSelector } from 'common/custom_hooks/use_app_selector';
-import { Route, Routes, useNavigate } from 'react-router';
+import { Route, Routes } from 'react-router';
 import { ProtectedRoute } from 'common/components/ProtectedRoute';
-import { printWrapped } from 'utils';
 
 
 const App = () => {
   const dispatch = useAppDispatch();
-  const navigate = useNavigate();
-  const data = useAppSelector((state) => state.authReducer.data);
 
   useEffect(() => {
 
@@ -26,7 +21,7 @@ const App = () => {
           dispatch(userEmpty())
         }
 
-        if (user) {
+        if (user) { 
           dispatch(userReceived({
             email: user.email,
             photoURL: user.photoURL,
@@ -34,8 +29,15 @@ const App = () => {
             accessToken: user.accessToken,
           }));
 
+          if ('token' in localStorage) {
+            localStorage.clear();
+          }
+
+          localStorage.setItem('token', JSON.stringify(user.accessToken));
+
+
           if (process.env.REACT_APP_ENVIRONMENT !== 'production') {
-            printWrapped(`token: ${user.accessToken}`);
+            console.log(`token: ${user.accessToken}`);
           }
         }
         
@@ -51,10 +53,7 @@ const App = () => {
   
   return <>
     <div>
-      {/* <LoginScreen /> */}
-      {/* <Newsfeed /> */}  
       <Routes>
-        {/* <Route element={<LoginScreen />} path='/login'/> */}
         <Route path='/' element={  
           <ProtectedRoute >
             <Newsfeed />
