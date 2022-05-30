@@ -3,8 +3,6 @@ import { graphQLClient} from 'common/di';
 import { gql } from "graphql-request";
 import React from "react";
 
-
-
 export const getUserProfileQuery = gql`
   query {
     getUserProfile {
@@ -35,19 +33,6 @@ export const getUserProfileQuery = gql`
     }
   }
 `
-
-// export const useGetProfile = () => {
-
-//   return useQuery('get-profile', async () => {
-//     const response = await graphQLClient.request(
-//       getUserProfileQuery,
-//     );
-//     if (response) {
-//       return response;
-//     } 
-//   });
-// };
-
 export const useGetProfile = () => {
   const profile = useQuery(['get-profile'], async () => {
     const response = await graphQLClient.request(getUserProfileQuery);

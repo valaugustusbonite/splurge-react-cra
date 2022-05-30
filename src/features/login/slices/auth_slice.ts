@@ -10,6 +10,10 @@ const authSlice = createSlice({
   name: 'auth',
   initialState,
   reducers: {
+    resetState: (state) => {
+      state.data = null,
+      state.status = AuthStateStatus.idle;
+    },
     fetchingUserFromGoogle: (state) => {
       state.status = AuthStateStatus.loading;
     },
@@ -33,6 +37,6 @@ const authSlice = createSlice({
 
 const { actions, reducer } = authSlice;
 
-export const { fetchingUserFromGoogle, userReceived, errorInFetch, logout, userEmpty } = actions;
+export const { fetchingUserFromGoogle, userReceived, errorInFetch, logout, userEmpty, resetState } = actions;
 
 export default reducer;

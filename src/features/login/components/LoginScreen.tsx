@@ -3,12 +3,12 @@ import LoginBGDesktop from 'assets/backgrounds/login_desktop.png';
 import BrandLogo from 'assets/icons/login/brand_name.svg';
 import { OutlineButton } from 'common/components/buttons';
 import { signInWithGooglePopup } from 'utils';
-import { useDispatch } from 'react-redux';
 import { userReceived, logout, errorInFetch } from 'features/login/slices/auth_slice';
+import { useAppDispatch } from 'common/custom_hooks/use_app_dispatch';
 
 export const LoginScreen: React.FC = () => {
     const [ isMobile ] = useMediaQuery("(max-width: 768px)");
-    const dispatch = useDispatch();
+    const dispatch = useAppDispatch();
 
     const signInWithGoogle = async () => {
        try {

@@ -5,12 +5,12 @@ Although there is benefit in having a high test coverage, time will still play a
 
 Testing priority:
 
-1.) High value features
+- High value features
       * Features that bring the most impact/revenue for the app.
       * Example: Amazon.com, features like being able to view products, buy a product, etc.
-2.) Edge cases in high value features
-3.) Things that are easy to break
-4.) Basic React component testing
+- Edge cases in high value features
+- Things that are easy to break
+- Basic React component testing
       * Components that are present in high value features
       * Components that are heavily reused across different areas of the app
       * User interactions
