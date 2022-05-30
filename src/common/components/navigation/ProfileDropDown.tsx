@@ -1,12 +1,11 @@
-import { Box, Button, Menu, MenuButton, MenuItem, MenuList, Image } from "@chakra-ui/react"
+import { Box, Menu, MenuButton, MenuItem, Image } from "@chakra-ui/react"
 import { DropdownMenuList } from "../menu"
 import { ProfileAvatar } from "../ProfileAvatar"
 import LogoutIcon from 'assets/icons/logout.svg'
 import { signOutGoogle } from "utils"
-import { isLabeledStatement } from "typescript"
-import { useNavigate } from "react-router-dom"
 import { useAppDispatch } from "common/custom_hooks/use_app_dispatch"
 import { errorInFetch, logout } from "features/login"
+import { useAppSelector } from "common/custom_hooks/use_app_selector"
 
 export interface ProfileDropdownItemProps {
   label: string,
@@ -15,6 +14,7 @@ export interface ProfileDropdownItemProps {
 }
 
 export const ProfileDropdown: React.FC = () => {
+  const { data } = useAppSelector((state) => state.authReducer);
   const dispatch = useAppDispatch();
 
   const googleSignOut = async () => {
@@ -29,7 +29,7 @@ export const ProfileDropdown: React.FC = () => {
 
   return <Menu autoSelect={false}>
     <MenuButton>
-      <ProfileAvatar />
+      <ProfileAvatar photoUrl={data != null ? data.photoURL : ''}/>
     </MenuButton>
       <DropdownMenuList 
         width={375}

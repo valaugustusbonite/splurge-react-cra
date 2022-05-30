@@ -1,7 +1,6 @@
 import { useAppSelector } from "common/custom_hooks/use_app_selector"
 import { AuthStateStatus, LoginScreen } from "features/login";
 import { ReactElement } from "react";
-import { Navigate } from "react-router-dom";
 import { SplashScreen } from "./SplashScreen";
 
 export interface ProtectedRouteProps {

@@ -1,4 +1,4 @@
-import { Center, Image, Flex, Box } from "@chakra-ui/react"
+import { Image, Flex, Box } from "@chakra-ui/react"
 import BrandLogo from 'assets/icons/brand_logo.svg';
 import BrandName from 'assets/icons/login/brand_name.svg';
 

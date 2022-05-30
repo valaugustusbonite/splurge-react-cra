@@ -1,11 +1,9 @@
 import { initializeApp } from "firebase/app";
 import { 
   getAuth, 
-  signInWithRedirect,
   signInWithPopup,
   GoogleAuthProvider,
   onAuthStateChanged,
-  signOut,
 } from "firebase/auth";
 
 const firebaseConfig = {
@@ -31,9 +29,9 @@ googleAuthProvider.setCustomParameters({
 
 export const auth = getAuth();
 
-export const signInWithGooglePopup = () => {
+export const signInWithGooglePopup = async () => {
   try {
-    return signInWithPopup(auth, googleAuthProvider);
+    return await signInWithPopup(auth, googleAuthProvider);
   } catch (error) {
     
   }

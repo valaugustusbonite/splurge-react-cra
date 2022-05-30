@@ -1,11 +1,9 @@
-import { Box, Flex, Image, Center, useMediaQuery } from "@chakra-ui/react"
+import { Flex, Image, Center } from "@chakra-ui/react"
 import BrandLogo from 'assets/icons/login/brand_name.svg';
 import { NavbarMenuItems } from "common/components/navigation";
-import { ColorTheme } from "configurations";
 
 
 export const Navbar: React.FC = () => {
-    const [ isMobile ] = useMediaQuery("(max-width: 768px)");
 
     
     return <>

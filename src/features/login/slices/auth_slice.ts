@@ -1,26 +1,10 @@
-import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
-import { useAppDispatch } from "common/custom_hooks/use_app_dispatch";
-import { AuthActionTypes, AuthState, AuthStateStatus } from "features/login/types/auth_types";
-import { User } from "features/login/types/auth_types";
-import { signInWithGooglePopup } from "utils";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { AuthState, AuthStateStatus } from "features/login/types/auth_types";
 
 const initialState: AuthState = {
   status: AuthStateStatus.idle,
   data: null,
 }
-
-// const fetchUserFromGoogle = createAsyncThunk(
-//   AuthActionTypes.SIGNIN_WITH_GOOGLE,
-//   async (thunkAPI) => {
-//     try {
-//       const response = await signInWithGooglePopup();
-
-//       return response.data;
-//     } catch (error) {
-      
-//     }
-//   }
-// )
 
 const authSlice = createSlice({
   name: 'auth',
@@ -29,10 +13,6 @@ const authSlice = createSlice({
     fetchingUserFromGoogle: (state) => {
       state.status = AuthStateStatus.loading;
     },
-    // signInWithGoogleAction: (state, action: PayloadAction<User>) => {
-    //   let { payload } = action;
-    //   state.data = payload;
-    // }
     userEmpty: (state) => {
       state.status = AuthStateStatus.success;
       state.data = null;

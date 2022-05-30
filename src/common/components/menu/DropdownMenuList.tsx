@@ -1,4 +1,4 @@
-import { ComponentWithAs, MenuItem, MenuItemProps, MenuList } from "@chakra-ui/react"
+import { MenuList } from "@chakra-ui/react"
 
 export interface DropdownMenuListProps {
   menuItems: React.ReactNode[],
