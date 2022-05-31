@@ -9,14 +9,16 @@ import { Provider } from 'react-redux';
 import { ChakraProvider } from '@chakra-ui/react';
 import { theme } from 'configurations';
 import { QueryClient, QueryClientProvider, QueryCache } from "react-query";
+import { AppProvider } from 'provider/AppProvider';
 
-const queryClient = new QueryClient({
+export const queryClient = new QueryClient({
   queryCache: new QueryCache(),
 });
 
 ReactDOM.render(
   <React.StrictMode>
-    <QueryClientProvider client={queryClient}>
+    <AppProvider />
+    {/* <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Provider store={store}>
           <ChakraProvider theme={theme}>
@@ -24,7 +26,7 @@ ReactDOM.render(
           </ChakraProvider>
         </Provider>
       </BrowserRouter>
-    </QueryClientProvider>
+    </QueryClientProvider> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
