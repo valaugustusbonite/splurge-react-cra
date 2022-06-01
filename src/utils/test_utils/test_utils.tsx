@@ -1,11 +1,8 @@
 import authReducer from 'features/login/slices/auth_slice'
 import { render as rtlRender } from '@testing-library/react'
 import { configureStore} from '@reduxjs/toolkit'
-import { Provider } from 'react-redux'
 import React, { FunctionComponent } from 'react'
 import { LoginScreen } from 'features/login'
-import { QueryCache, QueryClient, QueryClientProvider } from 'react-query'
-import { queryClient } from 'index'
 import { AppProvider } from 'provider/AppProvider'
 
 export type ChildrenProps = {
@@ -28,13 +25,6 @@ export const customRender = async ({
     store: configureStore({ reducer: { authReducer }}),
   }
 } ) => {
-
-  // const Wrapper = ({ children }: ChildrenProps ) => {
-  //   return <QueryClientProvider client={queryClient}>
-  //     <Provider store={options?.store}>{children}</Provider>
-  //   </QueryClientProvider>
-  // };
-  window.history.pushState({}, 'Test page');
 
 
   return rtlRender(
