@@ -1,32 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter } from 'react-router-dom';
-import { store } from 'store';
-import { Provider } from 'react-redux';
-import { ChakraProvider } from '@chakra-ui/react';
-import { theme } from 'configurations';
-import { QueryClient, QueryClientProvider, QueryCache } from "react-query";
 import { AppProvider } from 'provider/AppProvider';
 
-export const queryClient = new QueryClient({
-  queryCache: new QueryCache(),
-});
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppProvider />
-    {/* <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <Provider store={store}>
-          <ChakraProvider theme={theme}>
-            <App />
-          </ChakraProvider>
-        </Provider>
-      </BrowserRouter>
-    </QueryClientProvider> */}
+    <AppProvider>
+    </AppProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

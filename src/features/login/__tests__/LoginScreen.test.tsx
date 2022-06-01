@@ -1,6 +1,3 @@
-import authReducer from 'features/login/slices/auth_slice'
-import { configureStore } from '@reduxjs/toolkit'
-import { Provider } from 'react-redux'
 import { LoginScreen } from 'features/login'
 import { render, screen, describe, fireEvent } from 'utils/test_utils/test_utils'
 import { mockFirebase } from 'utils/test_utils/mocks'
