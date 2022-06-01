@@ -11,7 +11,7 @@ const authSlice = createSlice({
   initialState,
   reducers: {
     resetState: (state) => {
-      state.data = null,
+      state.data = null;
       state.status = AuthStateStatus.idle;
     },
     fetchingUserFromGoogle: (state) => {
