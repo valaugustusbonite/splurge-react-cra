@@ -1,20 +1,20 @@
 import { IconButton } from "@chakra-ui/react"
-import CloseIcon from 'assets/icons/close.svg'
+import CloseIcon from 'assets/icons/arrow_forward.svg'
 import { AssetWrapper } from "common/components"
 
-interface CloseButtonProps {
+interface ProceedButtonProps {
   onClick?: () => void
 }
 
-export const CustomCloseButton: React.FC<CloseButtonProps> = ({
+export const ProceedButton: React.FC<ProceedButtonProps> = ({
   onClick
 }) => {
   return(
     <IconButton 
-        aria-label='close'
-        icon={<AssetWrapper asset={CloseIcon}  w={24} h={24} />} 
-        h='23px' 
-        w='23px' 
+        aria-label='proceed'
+        icon={<AssetWrapper asset={CloseIcon} w={26} h={26}/>} 
+        h='28px' 
+        w='28px' 
         paddingX='20px'
         margin='0px'
         backgroundColor='transparent' 

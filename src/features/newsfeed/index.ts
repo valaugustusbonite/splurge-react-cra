@@ -1,1 +1,1 @@
-export * from './components/Newsfeed';
+export * from './routes/Newsfeed';

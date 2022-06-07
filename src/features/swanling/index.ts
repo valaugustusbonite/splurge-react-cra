@@ -1,2 +1,2 @@
-export * from './components/CreateSwanlingModalScreen'
+export * from './routes/CreateSwanlingModalScreen'
 export * from './components/SwanlingPreview'

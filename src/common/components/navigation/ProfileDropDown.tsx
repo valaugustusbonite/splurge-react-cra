@@ -29,7 +29,7 @@ export const ProfileDropdown: React.FC = () => {
 
   return <Menu autoSelect={false}>
     <MenuButton>
-      <ProfileAvatar photoUrl={data != null ? data.photoURL : ''}/>
+      <ProfileAvatar photoUrl={data != null ? data.photoURL : ''} size={23} />
     </MenuButton>
       <DropdownMenuList 
         width={375}
