@@ -1,12 +1,14 @@
 import { Avatar } from "@chakra-ui/react"
 
 interface ProfileAvatarProps {
-  photoUrl?: string
+  photoUrl?: string,
+  size?: number,
 }
 
 export const ProfileAvatar: React.FC<ProfileAvatarProps> = ({
-  photoUrl
+  photoUrl,
+  size = 46
 }) => {
 
-  return <Avatar src={photoUrl ?? ''} w='23px' h='23px' margin='0 20px'/>
+  return <Avatar src={photoUrl ?? ''} w={`${size}px`} h={`${size}px`} margin='0 20px'/>
 }

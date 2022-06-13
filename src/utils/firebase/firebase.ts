@@ -5,6 +5,7 @@ import {
   GoogleAuthProvider,
   onAuthStateChanged,
 } from "firebase/auth";
+import storage from "utils/storage";
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -47,3 +48,21 @@ export const authListener = (callback?: (args: any) => void) => {
 }
 
 export const signOutGoogle = () => auth.signOut();
+
+export const refreshSession = async () => {
+  const user = auth.currentUser;
+
+  if (user == null) return;
+
+  let refreshToken = await user.getIdToken();
+
+  console.log(`REFRESH: ${refreshToken}`);
+
+  if (!refreshToken) return;
+
+  if ('token' in localStorage) {
+    storage.clearToken();
+  }
+
+  storage.setToken(refreshToken);
+}

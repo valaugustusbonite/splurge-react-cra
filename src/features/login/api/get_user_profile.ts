@@ -36,17 +36,22 @@ export const getUserProfileQuery = gql`
 export const useGetProfile = () => {
   const profile = useQuery(['get-profile'], async () => {
     const response = await graphQLClient.request(getUserProfileQuery);
+    
 
     if (response.error) {
+      console.log(response.error);
       return response.error;
     }
 
     return response;
+  }, {
+    onError: (error) => console.log(`ERROR: ${error}`)
   })
 
   React.useEffect(() => {
     if (profile.error) {
-      console.log('Something went wrong');
+      //console.log('Something went wrong');
+      console.log(`ERROR: ${profile.error}`)
     }
 
   }, [profile.error]);

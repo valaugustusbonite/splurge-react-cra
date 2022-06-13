@@ -7,6 +7,8 @@
     "@chakra-ui/react": "^1.8.8",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "@fontsource/open-sans": "^4.5.10",
+    "@fontsource/poppins": "^4.5.8",
     "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -16,12 +18,14 @@
     "@types/react": "^16.14.25",
     "@types/react-dom": "^16.9.14",
     "@types/react-redux": "^7.1.24",
+    "date-fns": "^2.28.0",
     "dotenv": "^16.0.0",
     "firebase": "^9.7.0",
     "formik": "^2.2.9",
     "framer-motion": "^6",
     "graphql": "^16.5.0",
     "graphql-request": "^4.2.0",
+    "moment": "^2.29.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-markdown": "^8.0.3",
@@ -33,7 +37,8 @@
     "redux-firestore": "^1.0.0",
     "redux-logger": "^3.0.6",
     "styled-components": "^5.3.5",
-    "typescript": "~4.1.5"
+    "typescript": "~4.1.5",
+    "uploader": "^1.45.14"
   },
   "scripts": {
     "start": "react-scripts start",

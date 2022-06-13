@@ -1,8 +1,9 @@
 import { GraphQLClient } from "graphql-request";
+import storage from 'utils/storage';
 
 const API_URL = `${process.env.REACT_APP_API_URL}/graphql` ?? '';
 
-const token = localStorage.getItem('token');
+const token = storage.getToken();
 
 export const graphQLClient = new GraphQLClient(API_URL, {
   headers: {
