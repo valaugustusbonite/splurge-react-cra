@@ -6,6 +6,7 @@ import { authListener } from 'utils/firebase/firebase';
 import { useAppDispatch } from 'common/custom_hooks/use_app_dispatch';
 import { Route, Routes } from 'react-router';
 import { ProtectedRoute } from 'common/components/ProtectedRoute';
+import storage from 'utils/storage'
 
 
 const App = () => {
@@ -30,14 +31,14 @@ const App = () => {
           }));
 
           if ('token' in localStorage) {
-            localStorage.clear();
+            storage.clearToken();
           }
 
-          localStorage.setItem('token', JSON.stringify(user.accessToken));
+          storage.setToken(user.accessToken);
 
 
           if (process.env.REACT_APP_ENVIRONMENT !== 'production') {
-            console.log(`token: ${user.accessToken}`);
+            console.log(`token: ${storage.getToken()}`);
           }
         }
         

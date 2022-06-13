@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react"
+import { Container } from "@chakra-ui/react"
 import { SwanlingCardHeader } from "common/components/swanling";
 import { SwanlingDisplay } from "common/components/swanling";
 import { Swanling } from "common/types";
@@ -10,11 +10,15 @@ export interface SwanlingCardProps {
 export const SwanlingCard: React.FC<SwanlingCardProps> = ({
   swanling
 }) => {
+
   
   return(
-    <Box maxWidth='565px'>
+    <Container
+      maxWidth='565px' 
+      margin='8px 0'
+    >
       <SwanlingCardHeader swanling={swanling}/>
       <SwanlingDisplay />
-    </Box>
+    </Container>
   );
 }

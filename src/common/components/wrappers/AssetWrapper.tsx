@@ -12,6 +12,6 @@ export const AssetWrapper: React.FC<AssetWrapperProps> = ({
   h = 18,
 }) => {
   return(
-    <Image src={asset} w={`${w}px`} h={`${h}px`}></Image>
+    <Image src={asset} w={`${w}px`} h={`${h}px`} ></Image>
   )
 }

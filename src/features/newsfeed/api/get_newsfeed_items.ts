@@ -2,6 +2,8 @@ import { useQuery } from "react-query";
 import { gql } from "graphql-request";
 import { graphQLClient } from "common/di";
 import React from "react";
+import { GraphQLError } from "graphql";
+import { refreshSession } from "utils";
 
 export const getNewsfeedItemsQuery = gql`
 query GetNewsfeedItems($limit: Int, $pointer: Int) {
@@ -222,7 +224,7 @@ export const useGetNewsfeed = (limit: number, pointer: number) => {
       {
         limit,
         pointer
-      }
+      },
     )
 
     if (response.error) {
@@ -230,11 +232,17 @@ export const useGetNewsfeed = (limit: number, pointer: number) => {
     }
 
     return response;
-  })
+  });
 
   React.useEffect(() => {
-    if (newsfeed.error) {
-      console.log('Something went wrong');
+    const { error } = newsfeed as { error: GraphQLError };
+
+    if (error) {
+      if (error.message.includes('Unauthorized')) {
+        refreshSession();
+      }
+      
+      console.log(`ERRORRRRR: ${error.message}`)
     }
 
   }, [newsfeed.error]);

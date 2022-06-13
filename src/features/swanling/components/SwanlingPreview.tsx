@@ -1,36 +1,58 @@
-import { Box, Center, Flex, Input, Text } from "@chakra-ui/react"
-import { useState } from "react";
-import { chooseFile } from "utils"
+import { AspectRatio, Box, Center, Flex, FormLabel, Input, InputGroup, InputLeftElement, Text } from "@chakra-ui/react"
+import { AssetWrapper } from "common/components";
+import { useEffect, useRef, useState } from "react";
+import { chooseFile } from "utils";
+import bg from 'assets/backgrounds/swanling_buffer.png';
 
 export const SwanlingPreview: React.FC = () => {
-  
-  const pickFile = () => {
-    chooseFile();
-  }
 
   return(
     <Flex
-      backgroundColor='#696A6D'
+      backgroundColor='primaryDark'
       height='600px'
-      width='600px'
+      // width='600px'
       padding='0px'
       margin='0px'
       alignContent='center'
       justifyContent='center'
+      dir='column'
     >
-      <label htmlFor="contained-button-file" className="m-0 w-100">
-        <input
-          style={{ display: 'none' }}
-          id="contained-button-file"
-          multiple
-          type="file"
-        />
-      </label>
-        {/* <Center>
-            <Text color='primaryWhite' fontSize='13px'>
-              Click here to select an image
+      <Center>
+        <Flex dir='column' alignItems='center'>
+          <Box>
+            <Center>
+              <AssetWrapper asset={bg} w={250} h={250}/>
+            </Center>
+            <Box h='20px'></Box>
+            <Text textAlign='center' color='primaryWhite'>
+              Choose a photo to create a swanling
             </Text>
-          </Center> */}
+            <Box h='20px'></Box>
+            <CustomUploadButton />
+          </Box>
+        </Flex>
+      </Center>
     </Flex>
   )
+}
+
+const CustomUploadButton: React.FC = () => {
+  return(
+    <Center>
+    <FormLabel 
+       htmlFor="writeUpFile" 
+       margin='0' 
+       color='primaryDark' 
+       fontWeight='semibold' 
+       fontSize='13px'
+       padding='10px 19px'
+       borderRadius='5'
+       bgGradient='linear(#E4D3B4 0%, #E4D3B4 25%, #AA9979 75%)'
+       sx={{
+         cursor: 'pointer'
+       }}
+     >Select from computer</FormLabel>
+     <Input type='file' style={{ display: 'none' }} id='writeUpFile'></Input>
+    </Center>
+  );
 }

@@ -3,26 +3,24 @@ import {
   ModalOverlay,
   ModalContent,
   ModalHeader,
-  ModalFooter,
   ModalBody,
-  ModalCloseButton,
-  useDisclosure,
-  Button,
   Flex,
   Text,
   Box,
-  Image,
-  IconButton,
-  useMediaQuery
 } from '@chakra-ui/react'
 import { SwanlingPreview } from 'features/swanling'
 import { CustomCloseButton, ProceedButton } from 'common/components/buttons'
 
 export const CreateSwanlingModalScreen: React.FC<{isOpen: boolean, onClose: () => void}> = ({isOpen, onClose}) => {
-  const [ isMobile ] = useMediaQuery("(max-width: 768px)");
-  
+
   return(
-    <Modal isOpen={isOpen} onClose={onClose} isCentered size={'xl'} closeOnOverlayClick={false}>
+    <Modal
+      isOpen={isOpen} 
+      onClose={onClose} 
+      size={'xl'} 
+      closeOnOverlayClick={false} 
+      isCentered
+    >
         <ModalOverlay />
         <ModalContent>
           <CreateSwanlingHeader onClose={onClose}/>
@@ -64,7 +62,6 @@ const CreateSwanlingModalBody: React.FC = () => {
   return (
     <ModalBody
       width='600px'
-      backgroundColor='red'
       borderRadius='0px'
       height='521px'
       padding='0px'
